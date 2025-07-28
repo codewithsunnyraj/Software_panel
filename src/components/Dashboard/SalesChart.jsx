@@ -40,6 +40,25 @@ const SalesChart = () => {
           </PieChart>
         </ResponsiveContainer>
       </div>
+      <div className="space-y-3">
+        {data2.map((items, index) => (
+          <div key={index} className="flex items-center justify-between">
+            <div className="flex items-center space-x-3">
+              <div
+                className="w-3 h-3 rounded-full"
+                style={{ backgroundColor: items.color }}
+              >
+                <span className="text-sm text-slate-600 dark:text-slate-400">
+                  {items.name}
+                </span>
+              </div>
+              <div className="text-sm font-semibold text-slate-800 dark:text-white">
+                {items.value}%
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

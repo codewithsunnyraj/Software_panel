@@ -2,6 +2,8 @@ import {
   BarChart3,
   Calendar,
   CreditCard,
+  DollarSign,
+  Eye,
   FileText,
   icons,
   LayoutDashboard,
@@ -9,7 +11,9 @@ import {
   Package,
   Settings,
   ShoppingBag,
+  ShoppingCart,
   User,
+  Users,
 } from "lucide-react";
 
 export const menuItems = [
@@ -107,5 +111,48 @@ export const menuItems = [
     id: "Setting",
     icon: Settings,
     label: "Setting",
+  },
+];
+
+export const stats = [
+  {
+    title: "Total Revenue",
+    value: "$124.53",
+    change: "+12.5%",
+    trend: "up",
+    icon: DollarSign,
+    color: "from-emerald-500 to-teal-600",
+    bgColor: "bg-emerald-50 dark:bg-emerald-400",
+    textColor: "text-emerald-600 dark:text-emerald-400",
+  },
+  {
+    title: "Active Users",
+    value: "8,5505",
+    change: "+2.5%",
+    trend: "up",
+    icon: Users,
+    color: "from-blue-500 to-indigo-600",
+    bgColor: "bg-blue-50 dark:bg-blue-900/20",
+    textColor: "text-emerald-600 dark:text-blue-400",
+  },
+  {
+    title: "Total Orders",
+    value: "24,453",
+    change: "+15.5%",
+    trend: "up",
+    icon: ShoppingCart,
+    color: "from-purple-500 to-pink-600",
+    bgColor: "bg-purple-50 dark:bg-pink-900/20",
+    textColor: "text-purple-600 dark:text-pink-400",
+  },
+  {
+    title: "Page Views",
+    value: "456,453",
+    change: "-45.5%",
+    trend: "down",
+    icon: Eye,
+    color: "from-orange-500 to-red-600",
+    bgColor: "bg-orange-50 dark:bg-orange-900/20",
+    textColor: "text-orange-600 dark:text-orange-400",
   },
 ];

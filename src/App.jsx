@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
+import Sidebar from "./components/Layout/Sidebar";
+import Header from "./components/Layout/Header";
 
 const App = () => {
+  const [sideBar, setSideBar] = useState(false);
+  const [currentPage, setCurrentPage] = useState("dashboard");
   return (
-    <div>
-      <h1 class="text-3xl font-bold underline">Hello world!</h1>
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 transition-all duration-500">
+      <div className="flex h-screen overflow-hidden">
+        <Sidebar
+          collapsed={sideBar}
+          onToggle={() => setSideBar(!sideBar)}
+          currentPage={currentPage}
+          onPageChange={setCurrentPage}
+        />
+        <div className="flex-1 flex-col overflow-hidden">
+          <Header
+            sidebarCollapsed={sideBar}
+            onToggle={() => setSideBar(!sideBar)}
+          />
+        </div>
+      </div>
     </div>
   );
 };

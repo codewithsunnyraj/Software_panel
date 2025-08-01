@@ -226,3 +226,120 @@ export const data2 = [
   { name: "Books", value: 15, color: "#10b981" },
   { name: "Others", value: 10, color: "#f59e0b" },
 ];
+
+export const recentOrders = [
+  {
+    id: "#3847",
+    customer: "John Smith",
+    product: "Macbook Pro 16",
+    amount: "$2,399",
+    status: "completed",
+    date: "2024-01-15",
+  },
+  {
+    id: "#3848",
+    customer: "Sun Smith",
+    product: "Anroid Pro 16",
+    amount: "$2,399",
+    status: "completed",
+    date: "2024-01-15",
+  },
+  {
+    id: "#3849",
+    customer: "Jojo Smith",
+    product: "Macbook Pro 16",
+    amount: "$2,399",
+    status: "pending",
+    date: "2024-01-15",
+  },
+  {
+    id: "#3850",
+    customer: "Stoke",
+    product: "Ipad Pro 16",
+    amount: "$2,399",
+    status: "completed",
+    date: "2024-01-15",
+  },
+  {
+    id: "#3851",
+    customer: "Tannu Priya",
+    product: "Macbook Pro 16",
+    amount: "$2,399",
+    status: "cancel",
+    date: "2024-01-15",
+  },
+];
+
+export const topProducts = [
+  {
+    name: "MacBook Pro 16",
+    sales: 1247,
+    revenue: "$2,987,530",
+    trend: "up",
+    change: "+12%",
+  },
+  {
+    name: "iphone 15 pro",
+    sales: 2156,
+    revenue: "$2,987,530",
+    trend: "up",
+    change: "+12%",
+  },
+  {
+    name: "Airpods pro",
+    sales: 3421,
+    revenue: "$2,987,530",
+    trend: "up",
+    change: "+12%",
+  },
+  {
+    name: "ipad Pro 16",
+    sales: 1247,
+    revenue: "$2,987,530",
+    trend: "up",
+    change: "+12%",
+  },
+];
+
+export const Acitivites = [
+  {
+    id: 1,
+    type: "user",
+    icon: User,
+    title: "New User Registered",
+    description: "John Smith Created an account",
+    time: "2 minutes ago",
+    color: "text-blue-500",
+    bgColor: "bg-blue-100 dark:bg-blue-900/30",
+  },
+  {
+    id: 1,
+    type: "user",
+    icon: User,
+    title: "New User Registered",
+    description: "John Smith Created an account",
+    time: "2 minutes ago",
+    color: "text-blue-500",
+    bgColor: "bg-blue-100 dark:bg-blue-900/30",
+  },
+  {
+    id: 2,
+    type: "order",
+    icon: ShoppingCart,
+    title: "New Order Recieved",
+    description: "John Smith Created an account",
+    time: "5 minutes ago",
+    color: "text-emerald-500",
+    bgColor: "bg-emerald-100 dark:bg-emerald-900/30",
+  },
+  {
+    id: 1,
+    type: "user",
+    icon: User,
+    title: "New User Registered",
+    description: "John Smith Created an account",
+    time: "2 minutes ago",
+    color: "text-blue-500",
+    bgColor: "bg-blue-100 dark:bg-blue-900/30",
+  },
+];

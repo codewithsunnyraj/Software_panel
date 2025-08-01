@@ -20,8 +20,8 @@ const App = () => {
             sidebarCollapsed={sideBar}
             onToggle={() => setSideBar(!sideBar)}
           />
-          <main className="flex-1 overflow-y-auto bg-transparent">
-            <div className="p-6 space-y-6">
+          <main className="flex-1  overflow-y-auto h-screen bg-transparent">
+            <div className="p-6  space-y-6">
               {currentPage === "dashboard" && <Dashboard />}
             </div>
           </main>
